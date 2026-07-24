@@ -12,7 +12,7 @@
 insert into provinces (code, name_th) values ('86', 'ชุมพร');
 
 insert into districts (province_id, code, name_th)
-select p.id, code, name_th from provinces p, (values
+select p.id, d.code, d.name_th from provinces p, (values
   ('01', 'เมืองชุมพร'),
   ('02', 'ท่าแซะ'),
   ('03', 'ปะทิว'),
